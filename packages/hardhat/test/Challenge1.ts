@@ -107,7 +107,7 @@ describe("🚩 Challenge 1: 🥩 Decentralized Staking App", function () {
           expect(txResult.status).to.equal(1);
 
           console.log("\t", " ⌛️ fast forward time...");
-          await network.provider.send("evm_increaseTime", [3600]);
+          await network.provider.send("evm_increaseTime", [3610]);
           await network.provider.send("evm_mine");
 
           console.log("\t", " 🎉 calling execute");
